@@ -1,0 +1,22 @@
+
+import * as THREE from 'three/webgpu';
+import type { CanvasProps } from '@react-three/fiber';
+import { extend, Canvas } from '@react-three/fiber';
+
+extend(THREE as any);
+
+export const WebGPUCanvas = (props: CanvasProps) => {
+  return (
+    <Canvas
+      {...props}
+      flat
+      gl={async (props) => {
+        const renderer = new THREE.WebGPURenderer(props as any);
+        await renderer.init();
+        return renderer;
+      }}
+    >
+      {props.children}
+    </Canvas>
+  );
+};
