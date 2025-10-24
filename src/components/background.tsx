@@ -66,7 +66,7 @@ const Scene = () => {
 
     const flow = oneMinus(smoothstep(0, 0.02, abs(depth.sub(uProgress))));
 
-    const mask = dot.mul(flow).mul(vec3(10, 0, 0));
+    const mask = dot.mul(flow).mul(vec3(1, 5, 2));
 
     const final = blendScreen(tMap, mask);
 
