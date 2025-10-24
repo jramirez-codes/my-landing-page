@@ -41,7 +41,7 @@ export function Header() {
       <div className="space-y-0 justify-end">
         <a className="flex items-center justify-end space-x-1 group" href="https://github.com/jramirez-codes">
           <Shuffle
-            className="text-xl group-hover:text-red-500 group-hover:font-semibold transition-colors duration-500"
+            className="text-4xl md:text-xl group-hover:text-red-500 group-hover:font-semibold transition-colors duration-500"
             text="GitHub"
             shuffleDirection="right"
             duration={0.35}
@@ -58,7 +58,7 @@ export function Header() {
         </a>
         <a className="flex items-center justify-end space-x-1 group" href="https://www.linkedin.com/in/jordan-ramirez/">
           <Shuffle
-            className="text-xl group-hover:text-red-500  group-hover:font-semibold transition-colors duration-500"
+            className="text-4xl md:text-xl group-hover:text-red-500  group-hover:font-semibold transition-colors duration-500"
             text="LinkedIn"
             shuffleDirection="right"
             duration={0.35}
