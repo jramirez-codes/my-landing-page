@@ -1,5 +1,4 @@
 import { WebGPUCanvas } from './canvas';
-import type { ReactNode } from 'react';
 import { useAspect, useTexture } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 import { useContext, useMemo } from 'react';
@@ -105,7 +104,7 @@ const Scene = () => {
   );
 };
 
-const Html = (props: { children: ReactNode }) => {
+const Canvas3D = () => {
   const { isLoading } = useContext(GlobalContext);
 
   useGSAP(() => {
@@ -130,24 +129,19 @@ const Html = (props: { children: ReactNode }) => {
   }, [isLoading]);
 
   return (
-    <div className="h-svh">
+    <div className="h-svh fixed top-0 right-0 w-full -z-10">
       <WebGPUCanvas>
         <PostProcessing></PostProcessing>
         <Scene></Scene>
       </WebGPUCanvas>
-      <div className="absolute top-0 left-0">
-        {props.children}
-      </div>
     </div>
   );
 };
 
-export default function Background(props: { children: ReactNode }) {
+export default function Background() {
   return (
     <ContextProvider>
-      <Html>
-        {props.children}
-      </Html>
+      <Canvas3D />
     </ContextProvider>
   );
 }
