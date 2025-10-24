@@ -89,7 +89,7 @@ const Scene = () => {
     gsap.to(uniforms.uProgress, {
       value: 1,
       repeat: -1,
-      duration: 3,
+      duration: 5,
       ease: 'power1.out',
     });
   }, [uniforms.uProgress]);
