@@ -24,11 +24,11 @@ import * as THREE from 'three/webgpu';
 import { useGSAP } from '@gsap/react';
 import { GlobalContext, ContextProvider } from '../context/global-context';
 import { PostProcessing } from './post-processing';
-import TEXTUREMAP from '../assets/background-2.png';
-import DEPTHMAP from '../assets/depth-map-2.png';
+import TEXTUREMAP from '../assets/background-3.png';
+import DEPTHMAP from '../assets/depth-map-3.png';
 
-const WIDTH = 1500;
-const HEIGHT = 2000;
+const WIDTH = 1920;
+const HEIGHT = 1080;
 
 const Scene = () => {
   const { setIsLoading } = useContext(GlobalContext);
