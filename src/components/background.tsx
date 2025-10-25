@@ -23,8 +23,8 @@ import * as THREE from 'three/webgpu';
 import { useGSAP } from '@gsap/react';
 import { GlobalContext } from '../context/global-context';
 import { PostProcessing } from './post-processing';
-import TEXTUREMAP from '../assets/background-3.png';
-import DEPTHMAP from '../assets/depth-map-3.png';
+import TEXTUREMAP from '../assets/backgrounds/background-3.png';
+import DEPTHMAP from '../assets/backgrounds/depth-map-3.png';
 
 const WIDTH = 1920;
 const HEIGHT = 1080;

@@ -5,14 +5,23 @@ import { Footer } from "./ui-blocks/footer/footer"
 import { Header } from "./ui-blocks/header/header"
 import { GlobalContext } from "./context/global-context"
 import { LoadingScene } from "./components/loading-scene/loading-scene"
+import React from 'react'
+
 function App() {
 
   const globalContext = useContext(GlobalContext)
+  const [loadingSceneHidden, setLoadingScreenHidden] = React.useState(false)
 
   return (
     <div className="relative">
       <Background />
-      <LoadingScene isRendering={globalContext.isLoading} />
+      {!loadingSceneHidden && (
+        <LoadingScene
+          isRendering={globalContext.isLoading}
+          loadingSceneHidden={loadingSceneHidden}
+          setLoadingScreenHidden={setLoadingScreenHidden}
+        />
+      )}
       {!globalContext.isLoading && (
         <>
           <Header />
