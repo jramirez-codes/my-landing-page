@@ -21,7 +21,7 @@ import {
 
 import * as THREE from 'three/webgpu';
 import { useGSAP } from '@gsap/react';
-import { GlobalContext, ContextProvider } from '../context/global-context';
+import { GlobalContext } from '../context/global-context';
 import { PostProcessing } from './post-processing';
 import TEXTUREMAP from '../assets/background-3.png';
 import DEPTHMAP from '../assets/depth-map-3.png';
@@ -140,8 +140,6 @@ const Canvas3D = () => {
 
 export default function Background() {
   return (
-    <ContextProvider>
-      <Canvas3D />
-    </ContextProvider>
+    <Canvas3D />
   );
 }
