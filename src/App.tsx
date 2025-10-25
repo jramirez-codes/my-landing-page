@@ -4,6 +4,7 @@ import Shuffle from "./components/shuffle-text/shuffle-text"
 import { Footer } from "./ui-blocks/footer/footer"
 import { Header } from "./ui-blocks/header/header"
 import { GlobalContext } from "./context/global-context"
+import { LoadingScene } from "./components/loading-scene/loading-scene"
 function App() {
 
   const globalContext = useContext(GlobalContext)
@@ -11,11 +12,8 @@ function App() {
   return (
     <div className="relative">
       <Background />
-      {globalContext.isLoading ? (
-        <>
-          Loading
-        </>
-      ) : (
+      <LoadingScene isRendering={globalContext.isLoading} />
+      {!globalContext.isLoading && (
         <>
           <Header />
           <div className="font-bitcoin text-3xl text-center flex justify-center">

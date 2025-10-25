@@ -1,4 +1,4 @@
-import LogoLoop from '../../components/loop-logo/loop-logo';
+// import LogoLoop from '../../components/loop-logo/loop-logo';
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiPython, SiDocker } from 'react-icons/si';
 import { FaAws } from "react-icons/fa";
 
@@ -15,17 +15,17 @@ const techLogos = [
 export function Footer() {
   return (
     <div className="fixed bottom-0 left-0 w-[100%]">
-      <LogoLoop
-        className='text-white'
-        logos={techLogos}
-        speed={120}
-        direction="left"
-        logoHeight={48}
-        gap={40}
-        pauseOnHover
-        scaleOnHover
-        ariaLabel="Technology partners"
-      />
+      {/* <LogoLoop */}
+      {/*   className='text-white' */}
+      {/*   logos={techLogos} */}
+      {/*   speed={120} */}
+      {/*   direction="left" */}
+      {/*   logoHeight={48} */}
+      {/*   gap={40} */}
+      {/*   pauseOnHover */}
+      {/*   scaleOnHover */}
+      {/*   ariaLabel="Technology partners" */}
+      {/* /> */}
     </div>
   );
 }
