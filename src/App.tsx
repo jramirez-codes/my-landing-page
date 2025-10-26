@@ -25,10 +25,10 @@ function App() {
       {!globalContext.isLoading && (
         <>
           <Header />
-          <div className="font-bitcoin text-3xl text-center flex justify-center">
-            <div className="mt-[20vh] md:mt-0 lg:max-w-[65%]">
+          <div className="font-bitcoin text-4xl text-center flex justify-center">
+            <div className="mt-[5vh]">
               <Shuffle
-                className="text-4xl font-bold transition-colors duration-500"
+                className="text-5xl font-bold transition-colors duration-500"
                 text="Think it. Build it. Ship it."
                 shuffleDirection="right"
                 duration={0.35}

@@ -4,10 +4,9 @@ import { SiLinkedin } from "react-icons/si";
 
 export function Header() {
   return (
-    <div className="flex justify-between items-start w-[100vw] p-2 z-100">
-      <div className="font-bitcoin bg-transparent font-semibold" >
+    <div className="text-5xl flex justify-between items-start w-[100vw] p-2 z-100">
+      <div className="lg:text-white font-bitcoin bg-transparent font-semibold" >
         <Shuffle
-          className="text-xl lg:text-white"
           text="Jordan"
           shuffleDirection="right"
           duration={0.35}
@@ -23,7 +22,6 @@ export function Header() {
         />
         <br />
         <Shuffle
-          className="text-xl lg:text-white"
           text="Ramirez"
           shuffleDirection="right"
           duration={0.35}
@@ -41,7 +39,7 @@ export function Header() {
       <div className="space-y-0 justify-end">
         <a className="flex items-center justify-end space-x-1 group" href="https://github.com/jramirez-codes">
           <Shuffle
-            className="text-4xl md:text-xl group-hover:text-red-500 group-hover:font-semibold transition-colors duration-500"
+            className="group-hover:text-red-500 group-hover:font-semibold transition-colors duration-500"
             text="GitHub"
             shuffleDirection="right"
             duration={0.35}
@@ -58,7 +56,7 @@ export function Header() {
         </a>
         <a className="flex items-center justify-end space-x-1 group" href="https://www.linkedin.com/in/jordan-ramirez/">
           <Shuffle
-            className="text-4xl md:text-xl group-hover:text-red-500  group-hover:font-semibold transition-colors duration-500"
+            className="group-hover:text-red-500  group-hover:font-semibold transition-colors duration-500"
             text="LinkedIn"
             shuffleDirection="right"
             duration={0.35}
