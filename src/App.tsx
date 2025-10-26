@@ -19,8 +19,8 @@ function App() {
       {!globalContext.isLoading && (
         <>
           <Header />
-          <div className="font-bitcoin text-4xl text-center flex justify-center">
-            <div className="mt-[5vh]">
+          <div className="font-bitcoin text-3xl text-center flex justify-center">
+            <div className="mt-[5vh]" style={{ zIndex: 10 }}>
               <Shuffle
                 className="text-5xl font-bold transition-colors duration-500"
                 text="Think it. Build it. Ship it."
@@ -36,7 +36,7 @@ function App() {
                 respectReducedMotion={true}
               />
               <br />
-              Turn Ideas Into Production Ready Products
+              Turning Ideas Into Production Ready Products
             </div>
           </div >
           <Footer />
